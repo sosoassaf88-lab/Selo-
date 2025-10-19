@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Selen - Your Personal Fashion World</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Navbar -->
+<nav class="navbar">
+<div class="logo">Selen</div>
+<ul class="nav-links">
+<li><a href="#my-closet">My Closet</a></li>
+<li><a href="#ai-stylist">AI Stylist</a></li>
+<li><a href="#bestie-mode">Bestie Mode</a></li>
+<li><a href="#mini-challenges">Challenges</a></li>
+<li><a href="#selenc-coins">Selen Coins</a></li>
+<li><a href="#products">Products</a></li>
+</ul>
+<div class="user-profile">
+<img src="user-avatar.png" alt="User Avatar">
+</div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+<h1> "The fashion app that knows your taste better than you!"</h1>
+<p>Enjoy your personal Selen world and discover styles for you and your friends!</p>
+<a href="#products" class="btn">Shop Now</a>
+</section>
+
+<!-- Sections -->
+<section id="my-closet" class="section">
+<h2>My Closet</h2>
+<p>Save your favorite clothes and create your own outfits.</p>
+<div class="cards">
+<div class="card"> Dress</div>
+<div class="card"> T-shirt</div>
+</div>
+</section>
+
+<section id="ai-stylist" class="section">
+<h2>AI Stylist</h2>
+<p>Upload your photo and get outfit suggestions!</p>
+<button class="btn">Upload Photo</button>
+</section>
+
+<section id="bestie-mode" class="section">
+<h2>Bestie Mode</h2>
+<p>Share your looks with friends and vote on the best!</p>
+<div class="cards">
+<div class="card">Look 1 </div>
+<div class="card">Look 2 meh </div>
+</div>
+</section>
+
+<section id="mini-challenges" class="section">
+<h2>Mini Challenges</h2>
+<p>Participate in weekly challenges and earn points!</p>
+<div class="cards">
+<div class="card">Color Style</div>
+<div class="card">School Outfit</div>
+</div>
+</section>
+
+<section id="selenc-coins" class="section">
+<h2>Selen Coins</h2>
+<p>Collect points and exchange them for discounts and gifts!</p>
+<div class="coins">
+<p>Your Points: <span id="points">120</span> </p>
+<button class="btn" onclick="redeemPoints()">Redeem Points</button>
+</div>
+</section>
+
+<!-- Products Section -->
+<section id="products" class="section">
+<h2>Our Products</h2>
+<div id="products-container"></div>
+</section>
+
+<footer>
+<p>© 2025 Selen. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+
