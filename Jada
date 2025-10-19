@@ -1,0 +1,77 @@
+// Lina Coins
+function redeemPoints() {
+let points = document.getElementById('points');
+let current = parseInt(points.textContent);
+
+if(current >= 100){
+points.textContent = current - 100;
+alert("100 points redeemed! 🎉");
+} else {
+alert("Not enough points 😅");
+}
+}
+
+// Products by brand (girl-friendly brands only)
+const productsData = [
+{
+brand: "Zara",
+products: [
+{name: "Summer Dress", price: 30, image: "https://i.imgur.com/1F6xjvT.jpg"},
+{name: "Pink T-shirt", price: 15, image: "https://i.imgur.com/4u2kBfL.jpg"}
+]
+},
+{
+brand: "H&M",
+products: [
+{name: "Jeans", price: 25, image: "https://i.imgur.com/ABx0YJL.jpg"},
+{name: "Winter Jacket", price: 50, image: "https://i.imgur.com/6yV9plA.jpg"}
+]
+},
+{
+brand: "Sephora",
+products: [
+{name: "Red Lipstick", price: 20, image: "https://i.imgur.com/MzD4XZl.jpg"},
+{name: "Eyeshadow Palette", price: 25, image: "https://i.imgur.com/Kv4RdOt.jpg"}
+]
+},
+{
+brand: "Forever21",
+products: [
+{name: "Small Bag", price: 18, image: "https://i.imgur.com/oYkQ5Ic.jpg"},
+{name: "Silver Bracelet", price: 12, image: "https://i.imgur.com/jt5jZK6.jpg"}
+]
+},
+{
+brand: "Huda Beauty",
+products: [
+{name: "Liquid Matte Lipstick", price: 20, image: "https://i.imgur.com/5D9tFvY.jpg"},
+{name: "Eyeshadow Palette", price: 30, image: "https://i.imgur.com/2tJ7eKQ.jpg"}
+]
+}
+];
+
+const container = document.getElementById('products-container');
+
+productsData.forEach(brand => {
+const brandTitle = document.createElement('h3');
+brandTitle.textContent = brand.brand;
+brandTitle.style.color = "#d7b2ff";
+brandTitle.style.marginTop = "2rem";
+container.appendChild(brandTitle);
+
+const cards = document.createElement('div');
+cards.classList.add('cards');
+
+brand.products.forEach(product => {
+const card = document.createElement('div');
+card.classList.add('card');
+card.innerHTML = `
+<img src="${product.image}" alt="${product.name}">
+<h4>${product.name}</h4>
+<p>Price: $${product.price}</p>
+`;
+cards.appendChild(card);
+});
+
+container.appendChild(cards);
+});
