@@ -1,0 +1,144 @@
+/* Reset */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Poppins', sans-serif;
+}
+
+/* Body */
+body {
+background-color: #fff0f6;
+color: #333;
+line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 1rem 2rem;
+background-color: #f7d9e7;
+position: sticky;
+top: 0;
+z-index: 1000;
+}
+
+.navbar .logo {
+font-size: 1.8rem;
+font-weight: 600;
+color: #d7b2ff;
+}
+
+.navbar .nav-links {
+display: flex;
+gap: 1rem;
+list-style: none;
+}
+
+.navbar .nav-links li a {
+text-decoration: none;
+color: #333;
+font-weight: 500;
+transition: 0.3s;
+}
+
+.navbar .nav-links li a:hover {
+color: #d7b2ff;
+}
+
+.user-profile img {
+width: 40px;
+border-radius: 50%;
+}
+
+/* Hero Section */
+.hero {
+text-align: center;
+padding: 4rem 2rem;
+background: linear-gradient(to right, #fadadd, #d7b2ff);
+animation: fadeIn 1.5s ease-in;
+}
+
+.hero h1 {
+font-size: 2.5rem;
+margin-bottom: 1rem;
+}
+
+.hero p {
+font-size: 1.2rem;
+margin-bottom: 2rem;
+}
+
+.btn {
+background-color: #d7b2ff;
+color: white;
+padding: 0.8rem 1.5rem;
+border: none;
+border-radius: 30px;
+cursor: pointer;
+transition: 0.3s;
+}
+
+.btn:hover {
+background-color: #c09fff;
+}
+
+/* Sections */
+.section {
+padding: 3rem 2rem;
+text-align: center;
+}
+
+.section h2 {
+color: #d7b2ff;
+margin-bottom: 1rem;
+}
+
+.cards {
+display: flex;
+justify-content: center;
+gap: 1rem;
+flex-wrap: wrap;
+margin-top: 1rem;
+}
+
+.card {
+background-color: #fff;
+padding: 1.5rem;
+border-radius: 15px;
+box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+width: 150px;
+cursor: pointer;
+transition: transform 0.3s;
+text-align: center;
+}
+
+.card img {
+width: 100%;
+border-radius: 10px;
+}
+
+.card:hover {
+transform: translateY(-5px);
+}
+
+/* Coins Section */
+.coins {
+margin-top: 1rem;
+}
+
+/* Footer */
+footer {
+background-color: #f7d9e7;
+text-align: center;
+padding: 1rem;
+margin-top: 2rem;
+}
+
+/* Animations */
+@keyframes fadeIn {
+from {opacity: 0;}
+to {opacity: 1;}
+}
